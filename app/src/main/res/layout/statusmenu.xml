@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".StatusMenuActivity" 
+    >  
+    
+    <!--- Progress Bar --> 
+    <LinearLayout
+        android:id="@+id/busy_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/eligibility_layout"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:progressDrawable="@drawable/progressbar_color"
+			android:fitsSystemWindows="true"
+			android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/busy_status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:textColor="#ffffff"
+            android:textAppearance="@style/MemberName">
+        </TextView>
+        
+    </LinearLayout>
+ 
+    <!--- Content -->
+    
+    <ScrollView android:id="@+id/memberTitle"
+ 			   android:orientation="horizontal"
+               android:layout_margin="0dp"
+               android:layout_width="fill_parent"
+               android:layout_height="match_parent"
+               android:foregroundGravity="center_vertical"
+               android:background="@drawable/eligibility_layout"
+               android:layout_weight="1">
+
+	 <LinearLayout
+	     android:layout_width="fill_parent"
+	     android:layout_height="match_parent"
+	     android:padding="10dp"
+	     android:orientation="vertical">
+	   	
+	   	<TextView
+	        	android:id="@+id/statusMemberName"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:textAppearance="@style/MemberName"
+	        	android:gravity="fill_vertical"
+	        	android:paddingLeft="10dp"
+	        	android:textColor="#ffffff"
+	        	android:text="Member Name"
+	        	android:layout_weight="1"
+	        	android:textStyle="bold" />
+		  </LinearLayout>
+
+</ScrollView>
+  
+  <ScrollView android:id="@+id/closures"
+ 			   android:orientation="horizontal"
+               android:layout_margin="1dp"
+               android:paddingTop="30dip"
+               android:textColor="#ffffff"
+               android:layout_width="fill_parent"
+               android:layout_height="match_parent"
+               android:foregroundGravity="center_vertical"
+               android:layout_weight="1" >
+
+
+  <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:paddingBottom="10dip"
+	    android:paddingRight="10dip"
+	    android:paddingLeft="10dip"
+	    android:paddingTop="10dip" >
+	    	         
+	    <Button
+	        android:id="@+id/btnEligibility"
+	        android:layout_width="match_parent"
+	        android:layout_height="42dp"
+	        android:text="@string/EligEnquiry"
+	        android:textColor="#213C78"
+	        android:background="@drawable/red_button"
+	        android:textSize="10sp"
+	        android:paddingBottom="10dp"
+	        android:paddingTop="10dp"
+	        android:textStyle="bold" />
+		<TableRow
+	    		android:layout_width="match_parent"
+	        	android:layout_height="7dp"/>
+	
+	    <Button
+	        android:id="@+id/btnMedical"
+	        android:layout_width="match_parent"
+	        android:layout_height="42dp"
+	        android:text="@string/MedClaimEnquiry"
+	        android:background="@drawable/red_button"
+	        android:textColor="#213C78"
+	        android:paddingBottom="10dp"
+	        android:paddingTop="10dp"
+	        android:textSize="10sp"
+	        android:textStyle="bold" />
+		<TableRow
+	    		android:layout_width="match_parent"
+	        	android:layout_height="7dp"/>
+	    <Button
+	        android:id="@+id/btnHospital"
+	        android:layout_width="match_parent"
+	        android:layout_height="42dp"
+	        android:text="@string/HosClaim"
+	        android:background="@drawable/red_button"
+	        android:textColor="#213C78"
+	        android:textSize="10sp"
+	        android:textStyle="bold" />
+	    <TableRow
+	    		android:layout_width="match_parent"
+	        	android:layout_height="7dp"/>
+		<Button
+	        android:id="@+id/btnQuery"
+	        android:layout_width="match_parent"
+	        android:layout_height="42dp"
+	        android:background="@drawable/red_button"
+	        android:text="@string/MessageThread"
+	        android:textColor="#213C78"
+	        android:textSize="10sp"
+	        android:textStyle="bold" />
+		  <TableRow
+	    		android:layout_width="match_parent"
+	        	android:layout_height="7dp"/>
+		<Button
+	        android:id="@+id/btnAddress"
+	        android:layout_width="match_parent"
+	        android:layout_height="42dp"
+	        android:background="@drawable/red_button"
+	        android:text="@string/AddrUpdate"
+	        android:textColor="#213C78"
+	        android:textSize="10sp"
+	        android:textStyle="bold" />
+		
+		<TableRow
+	    		android:layout_width="match_parent"
+	        	android:layout_height="7dp"/>
+			<Button
+			    android:id="@+id/btnSettings"
+			    android:layout_width="match_parent"
+			    android:layout_height="42dp"
+			    android:background="@drawable/red_button"
+			    android:text="@string/NotSettings"
+			    android:textColor="#213C78"
+			    android:textSize="10sp"
+			    android:textStyle="bold" />
+		
+		<TableRow
+	    		android:layout_width="match_parent"
+	        	android:layout_height="7dp"/>
+			<Button
+			    android:id="@+id/btnLogOut"
+			    android:layout_width="match_parent"
+			    android:layout_height="42dp"
+			    android:background="@drawable/red_button"
+			    android:text="@string/logOut"
+			    android:textColor="#213C78"
+			    android:textSize="10sp"
+			    android:textStyle="bold" />
+			
+		</LinearLayout>
+		
+	</ScrollView>
+</merge>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/groub_item_layout"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:id="@+id/layFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" >
+
+        <TextView
+            android:id="@+id/txtSubject"
+            android:layout_width="250dip"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            style="@android:style/TextAppearance.Small"
+            android:textSize="14sp"
+            android:text="Subject" />
+		
+		<TextView
+            android:id="@+id/txtReceivedTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:gravity="right"
+            android:textSize="14sp"
+            style="@android:style/TextAppearance.Small"
+            android:text="Time"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/laySecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layFirst" >
+
+        <TextView
+            android:id="@+id/txtInboxUnit"
+            android:layout_width="270dip"
+            android:textColor="@android:color/white"
+            style="@android:style/TextAppearance.Small"
+            android:layout_height="wrap_content"
+            android:text="Tenant Name"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtSendBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@android:style/TextAppearance.Small"
+            android:gravity="right"
+            android:textColor="@android:color/white"
+            android:text="Code"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+      <TextView
+          android:id="@+id/txtMessage"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/laySecond"
+          android:textColor="@android:color/white"
+          style="@android:style/TextAppearance.Small"
+          android:text="Message"
+          android:textSize="10sp" />
+
+</RelativeLayout>

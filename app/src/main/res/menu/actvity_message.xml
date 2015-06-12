@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/mnuNewmessage"
+        android:title="@string/Post"
+        android:showAsAction="never" />
+    <item android:id="@+id/mnuOpenselected"
+        android:title="@string/OpenSelected"
+        android:showAsAction="never" />
+    <item android:id="@+id/mnuBack"
+        android:title="Back"
+        android:showAsAction="never" />
+</menu>

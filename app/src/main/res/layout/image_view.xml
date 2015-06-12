@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="3dip"
+    android:paddingLeft="2dip"
+    android:background="@drawable/eligibility_layout"
+    android:paddingRight="2dip"
+    android:paddingTop="3dip" >
+          
+ 	<FrameLayout android:id="@+id/fragment_content_7"
+	             android:layout_width="match_parent"
+	             android:layout_height="400dip"
+	             android:background="@drawable/act_bg"
+	             android:padding="1dp">
+	 
+	 <ImageView
+        android:id="@+id/imgViewAttacment"
+        android:background="@drawable/editbox_border"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+  
+	</FrameLayout>
+	 <LinearLayout
+ 	        android:layout_width="match_parent"
+ 	        android:layout_height="46dp"
+ 	        android:layout_gravity="top"
+ 	        android:orientation="horizontal" >
+
+ 	        <Button
+ 	            android:id="@+id/btnClosePreview"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:layout_weight="0.05"
+ 	            android:text="Close Preview"
+ 	            android:textColor="#305B07"
+ 	            android:textSize="13sp" />
+ 	    </LinearLayout>
+		
+</LinearLayout>

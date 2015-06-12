@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+ 
+    <TextView
+        android:id="@+id/txtTenantName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dip"
+        android:paddingLeft="4dip"
+        android:layout_alignParentLeft="true"
+        android:textSize="24px" >
+    </TextView>
+    <CheckBox
+        android:id="@+id/chkSendMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="4sp"
+        android:layout_marginRight="10sp" 
+        android:focusable="false"
+		android:focusableInTouchMode="false"
+        android:button="@xml/custom_checkbox">
+    </CheckBox>
+    
+</RelativeLayout>

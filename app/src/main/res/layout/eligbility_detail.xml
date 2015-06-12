@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/eligibility_layout"
+    android:orientation="vertical"
+    android:paddingBottom="3dip"
+    android:paddingLeft="2dip"
+    android:paddingRight="2dip"
+    android:paddingTop="3dip" >
+
+   	<TextView
+   	    android:id="@+id/eligMemberName"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_gravity="center"
+   	    android:paddingLeft="5sp"
+   	    android:textAppearance="@style/MemberName"
+   	    android:textSize="11sp"
+   	    android:textStyle="bold" />
+
+		<FrameLayout
+            android:id="@+id/fragment_content"
+            android:layout_width="fill_parent"
+            android:layout_height="260dp"
+            android:layout_weight="2.13"
+            android:animateLayoutChanges="true"
+            android:padding="1dp"
+            android:scrollbars="vertical" >
+
+		<ListView
+		    android:id="@+id/lvEligibility"
+		    android:layout_width="match_parent"
+		    style="@drawable/layout_shape"
+		    android:layout_height="match_parent"
+		    android:divider="?android:attr/listDivider"
+		    android:dividerHeight="1dp" />
+
+		</FrameLayout>
+
+      
+		
+</LinearLayout>

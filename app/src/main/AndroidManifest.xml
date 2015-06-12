@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.taeligstatus"
+    android:versionCode="1"
+    android:versionName="1.0" >
+	
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+   	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission> 
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19"/>
+    <compatible-screens></compatible-screens>
+
+    <application
+        android:icon="@drawable/ic_elife_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="elife.activities.SplashActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+              <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="elife.activities.LoginActivity"
+            android:label="ExecutiveLife-Login"
+            android:logo="@drawable/ic_launcher"
+            android:icon="@drawable/hps_new_logo2"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="elife.activities.InboxActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize|stateHidden" 
+			android:configChanges="orientation|keyboardHidden|screenSize"> 
+        </activity>
+        
+        <activity 
+            android:name="elife.activities.MemberSearchActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity 
+            android:name="elife.activities.ExpandedSearchView"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity 
+            android:name="elife.activities.ImageViewActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize|stateHidden" 
+			android:configChanges="orientation|keyboardHidden|screenSize"> 
+        </activity>
+        <activity android:name="elife.activities.HomeActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize|stateHidden" 
+			android:configChanges="orientation|keyboardHidden|screenSize" 
+         ></activity>
+         <activity android:name="elife.activities.MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+         ></activity>
+        <activity 
+            android:name="elife.activities.MemberInfoListActivity"
+            	android:label="ExecutiveLife-Active Tenants"
+            	android:logo="@drawable/ic_launcher"
+            	android:windowSoftInputMode="adjustResize|stateHidden" 
+				android:configChanges="orientation|keyboardHidden|screenSize">    
+        </activity>
+        <activity 
+            android:name="elife.activities.UnitListActivity"
+            	android:label="ExecutiveLife-Units"
+            	android:logo="@drawable/ic_launcher"
+            	android:windowSoftInputMode="adjustResize|stateHidden" 
+				android:configChanges="orientation">    
+        </activity>
+        <activity 
+            android:name="elife.activities.StatusMenuActivity"
+            	android:label="HPS Assitant-Status Enquiry"
+            	android:windowSoftInputMode="adjustResize|stateVisible" 
+				android:configChanges="orientation">    
+        </activity>
+          <activity 
+            	android:name="elife.activities.MemberSecurityQuestion"
+            	android:label="HPS Assitant-Security Question"
+            	android:windowSoftInputMode="adjustResize|stateVisible" 
+				android:configChanges="orientation">    
+        </activity>
+    	<activity android:name="elife.activities.CameraActivity" android:windowSoftInputMode="adjustResize|stateHidden" ></activity>
+        <activity android:name="elife.activities.Tab1" android:windowSoftInputMode="adjustResize|stateVisible" ></activity>
+        <activity android:name="elife.activities.Tab2"  android:windowSoftInputMode="adjustResize|stateVisible"></activity> 
+        <activity android:name="elife.activities.Tab3"  android:windowSoftInputMode="adjustResize|stateVisible"></activity>
+        <activity android:name="elife.activities.TabsFragmentActivity" android:windowSoftInputMode="adjustResize|stateVisible" ></activity>
+        <activity 
+            	android:name="elife.activities.TenantByUnitListActivity"
+            	android:label="ExecutiveLife-Tenants By Unit"
+            	android:windowSoftInputMode="adjustResize|stateHidden" 
+				android:configChanges="orientation">    
+        </activity>
+        <activity 
+            	android:name="elife.activities.TenantViewActivity"
+            	android:label="ExecutiveLife"
+            	android:windowSoftInputMode="adjustResize|stateHidden" 
+				android:configChanges="orientation">    
+        </activity>
+        <activity 
+            	android:name="elife.activities.EligibilityListActvity"
+            	android:label="HPS Assitant-Eligibility Claim Status"
+            	android:windowSoftInputMode="adjustResize|stateVisible" 
+				android:configChanges="orientation">    
+        </activity>
+        <activity 
+            	android:name="elife.activities.MedicalClaimActvity"
+            	android:label="HPS Assitant-Medical Claim Status"
+            	android:icon="@drawable/hps_new_logo2"
+           		android:windowSoftInputMode="adjustResize|stateVisible" 
+				android:configChanges="orientation">    
+        </activity>
+        <activity 
+            	android:name="elife.activities.MemberAddressUpdateActivity"
+            	android:label="HPS Assitant-Contact Update"
+            	android:icon="@drawable/hps_new_logo2"
+           		android:windowSoftInputMode="adjustResize|stateVisible" 
+				android:configChanges="orientation">    
+        </activity>
+        <activity 
+            	android:name="elife.activities.GeneralSettingsActivity"
+            	android:label="HPS Assitant- Notification Settings"
+            	android:icon="@drawable/hps_new_logo2"
+           		android:windowSoftInputMode="adjustResize|stateVisible" 
+				android:configChanges="orientation">    
+        </activity>
+        <activity 
+            	android:name="elife.activities.MessageListActivity"
+            	android:label="HPS Assitant- Communication Thread"
+            	android:windowSoftInputMode="adjustResize|stateHidden" 
+				android:configChanges="orientation">    
+        </activity>
+        <activity 
+            	android:name="elife.activities.MessageThreadListActivity"
+            	android:label="HPS Assitant- Selected Communication"
+            	android:windowSoftInputMode="adjustResize|stateVisible" 
+				android:configChanges="orientation">    
+        </activity>
+        <activity 
+            	android:name="elife.activities.PostQueryActivity"
+            	android:label="HPS Assitant-Post Query"
+            	android:windowSoftInputMode="adjustResize|stateHidden" 
+				android:configChanges="orientation">    
+        </activity>
+        <!-- Broadcast receiver -->
+		<receiver android:name="elife.notificationservice.AlarmManagerBroadcastReceiver"></receiver>
+	    <service android:name="elife.notificationservice.NotificationService" ></service>
+    </application>
+
+</manifest>

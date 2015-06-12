@@ -1,0 +1,51 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".TenantViewActivity" >
+    
+ 	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/act_bg"
+        android:orientation="vertical"
+        android:paddingBottom="5dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingTop="5dip" >
+<FrameLayout android:id="@+id/fragment_content"
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content"
+	             android:background="@drawable/act_bg"
+	             android:padding="1dp">
+ 	<ListView
+        android:id="@+id/lvTVTenantView"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:clickable="true" 
+	    android:dividerHeight="1px"
+	    android:layout_marginTop="1px" 
+	    android:textSize="16px">
+    </ListView>
+    
+ 	</FrameLayout>
+    
+    <TableRow
+		android:layout_width="match_parent"
+    	android:layout_height="1dp"/>
+	<Button
+       android:id="@+id/btnCall"
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:layout_alignParentTop="true"
+       android:layout_gravity="center"
+       android:layout_marginTop="16dp"
+       android:background="@drawable/red_button"
+       android:paddingLeft="32dp"
+       android:paddingRight="32dp"
+       android:text="Dial"
+       android:textColor="#305B07"
+       android:textSize="16sp" />
+    
+    </LinearLayout>
+</merge>

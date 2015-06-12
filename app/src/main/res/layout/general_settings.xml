@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+ 	
+		    
+         <FrameLayout
+            android:id="@+id/fragment_content"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5.13"
+            android:animateLayoutChanges="true"
+            android:background="@drawable/eligibility_layout"
+            android:padding="10dp"
+            android:scrollbars="horizontal">
+       
+       
+       <TextView
+            android:id="@+id/lblSettingsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textAppearance="@style/ActivityTitle"
+            android:text="Message Notification Settings" />
+             
+       <LinearLayout
+            style="@style/AddressFormContainer"
+         	android:orientation="vertical" >      
+	    
+           <CheckBox
+		       android:id="@+id/chkMessage"
+		       android:layout_width="wrap_content"
+		       android:textAppearance="@style/LabelText"
+		       android:layout_height="wrap_content"
+		       android:text="Claim Status" />
+		
+		   <CheckBox
+		       android:id="@+id/chkElig"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:text="Eligibility Status Update"
+		       android:textAppearance="@style/LabelText" />
+		   
+		   <CheckBox
+		       android:id="@+id/chkEmerg"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:text="Eligibility Shortage"
+		       android:textAppearance="@style/LabelText" />
+		   
+		   <CheckBox
+		       android:id="@+id/chkCOBRAAppStatus"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:text="COBRA Application Status"
+		       android:textAppearance="@style/LabelText" />
+		   
+		   <CheckBox
+		       android:id="@+id/chkPensionStatus"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:text="Pension Application Status"
+		       android:textAppearance="@style/LabelText" />
+		   
+		   <CheckBox
+		       android:id="@+id/chkAddrVerificationStatus"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:text="Address Change Update"
+		       android:textAppearance="@style/LabelText" />
+		   	       
+       <LinearLayout
+            style="@style/AddressFormContainer"
+         	android:orientation="horizontal" >      
+	        <Button
+	            android:id="@+id/btnUpdateSettings"
+	            android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_gravity="right"
+	            android:layout_weight="1"
+	            android:background="@drawable/red_button"
+	            android:text="Update"
+	            android:textColor="#213C78" />
+
+	        <Button
+	            android:id="@+id/btnSettingBack"
+	            android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:paddingLeft="10dp"
+	            android:background="@drawable/red_button"
+	            android:text="Back"
+	            android:textColor="#213C78" />
+	        </LinearLayout>
+			</LinearLayout>	    
+         </FrameLayout>
+         
+</LinearLayout>

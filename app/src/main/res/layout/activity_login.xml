@@ -1,0 +1,90 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".LoginActivity" >
+	    
+	<LinearLayout
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="match_parent"
+ 	    android:background="@drawable/eligibility_layout"
+ 	    android:orientation="vertical"
+ 	    android:paddingBottom="10dip"
+ 	    android:paddingLeft="5dp"
+ 	    android:paddingRight="5dip"
+ 	    android:paddingTop="5dip" >
+
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/eligibility_layout"
+      android:orientation="vertical"
+      android:paddingBottom="10dip"
+      android:paddingLeft="5dp"
+      android:paddingRight="5dip"
+      android:paddingTop="5dip" >
+ 	        
+    		<TextView
+	        	android:id="@+id/lbluserId"
+	        	android:layout_width="match_parent"
+	        	android:layout_height="wrap_content"
+	        	android:paddingBottom="3dp"
+	        	android:paddingLeft="3dp"
+	        	android:layout_weight="1"
+	        	android:text="User ID"
+	        	android:textStyle="normal" />
+		    
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/editbox_border"
+                android:maxLines="1"
+                android:singleLine="true" />
+			
+            <TextView
+	        	android:id="@+id/lbluserId"
+	        	android:layout_width="match_parent"
+	        	android:layout_height="wrap_content"
+	        	android:textSize="16sp"
+	        	android:paddingTop="5dp"
+	        	android:paddingBottom="1dp"
+	        	android:paddingLeft="3dp"
+	        	android:layout_weight="1"
+	        	android:text="Password"
+	        	android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_password"
+                android:background="@drawable/editbox_border"
+             	android:textSize="16sp"
+                android:padding="10dp"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/sign_in_button"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/red_button"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="@string/action_sign_in_register"
+                android:textColor="#305B07"
+                android:textSize="13sp" />
+			  </LinearLayout>
+        </LinearLayout>
+ </merge>

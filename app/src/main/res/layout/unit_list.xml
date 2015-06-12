@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/eligibility_layout"
+    android:orientation="vertical"
+    android:paddingBottom="3dip"
+    android:paddingLeft="2dip"
+    android:paddingRight="2dip"
+    android:paddingTop="3dip" >
+
+    <!-- Editext for Search -->
+
+    <EditText
+        android:id="@+id/unitSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/searchbox_border"
+        android:hint="Search UnitCode"
+        android:inputType="textVisiblePassword"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/act_bg"
+        android:padding="1dp" >
+
+        <ListView
+            android:id="@+id/lvUnitList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:choiceMode="singleChoice"
+            android:dividerHeight="1dp" />
+    </FrameLayout>
+
+  </LinearLayout>

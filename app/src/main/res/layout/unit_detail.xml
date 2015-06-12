@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="15sp"
+    android:orientation="vertical"
+    android:background="@drawable/act_bg"
+    android:paddingBottom="5sp"
+    android:paddingLeft="5sp"
+    android:paddingTop="5sp" >
+    
+    <TextView
+        android:id="@+id/txtUnitCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    
+    <TextView
+        android:id="@+id/txtStreetAddress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        />
+        
+    <TextView
+        android:id="@+id/txtSuburbName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        />
+
+</LinearLayout>

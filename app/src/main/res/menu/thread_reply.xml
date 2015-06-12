@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/mnuReply"
+        android:title="@string/Reply"
+        android:showAsAction="never" />
+    <item android:id="@+id/mnuBack"
+        android:title="Back"
+        android:showAsAction="never" />
+</menu>

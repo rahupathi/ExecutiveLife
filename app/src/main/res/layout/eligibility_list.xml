@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="15sp"
+    android:orientation="vertical"
+    android:paddingBottom="5sp"
+    android:paddingLeft="5sp"
+    android:paddingTop="5sp" >
+		
+    <TextView
+        android:id="@+id/BenefitName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="#ffffff"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/EligDates"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+         />
+    	<TextView
+        android:id="@+id/EligStatus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+         />
+   	
+    	<TextView
+        android:id="@+id/FundName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+         />
+</LinearLayout>

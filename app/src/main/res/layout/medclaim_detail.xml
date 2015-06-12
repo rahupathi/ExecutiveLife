@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="15sp"
+    android:orientation="vertical"
+    android:paddingBottom="2sp"
+    android:paddingLeft="2sp"
+    android:paddingTop="2sp" >
+		
+    <TextView
+        android:id="@+id/ClaimNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/ServiceDates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#ffffff"
+        android:textSize="8sp"
+         />
+    	<TextView
+        android:id="@+id/ClaimStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#ffffff"
+        android:textSize="8sp"
+         />
+   	
+    	<TextView
+        android:id="@+id/RendProvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#ffffff"
+        android:textSize="8sp"
+         />
+    	<TextView
+        android:id="@+id/BillProvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#ffffff"
+        android:textSize="8sp"
+         />
+</LinearLayout>

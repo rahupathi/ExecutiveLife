@@ -1,0 +1,87 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".CameraActivity" >
+
+ 	<LinearLayout
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="match_parent"
+ 	    android:background="@drawable/act_bg"
+ 	    android:orientation="vertical"
+ 	    android:paddingBottom="5dip"
+ 	    android:paddingLeft="5dip"
+ 	    android:paddingRight="5dip"
+ 	    android:paddingTop="5dip" >
+
+ 	    <FrameLayout
+ 	        android:id="@+id/fragment_content_4"
+ 	        android:layout_width="fill_parent"
+ 	        android:layout_height="350dip"
+ 	        android:layout_weight="0.34"
+ 	        android:background="@drawable/imagelist_layout"
+ 	        android:padding="5dp" >
+
+ 	        <ListView
+ 	            android:id="@+id/lvCapturedImgeList"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="match_parent" >
+ 	        </ListView>
+ 	    </FrameLayout>
+
+ 	    <TableRow
+ 	        android:layout_width="match_parent"
+ 	        android:layout_height="10dp" />
+
+ 	    <LinearLayout
+ 	        android:layout_width="match_parent"
+ 	        android:layout_height="wrap_content"
+ 	        android:orientation="horizontal" >
+
+ 	        <Button
+ 	            android:id="@+id/btnSendmailWithAttchment"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:layout_gravity="center_vertical"
+ 	            android:layout_weight="0.05"
+ 	            android:paddingLeft="25dp"
+ 	            android:paddingRight="25dp"
+ 	            android:text="Send Mail"
+ 	            android:textColor="#305B07"
+ 	            android:textSize="13sp" />
+
+ 	        <Button
+ 	            android:id="@+id/btnDeleteImages"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:layout_gravity="center_vertical"
+ 	            android:layout_weight="0.05"
+ 	            android:paddingLeft="25dp"
+ 	            android:paddingRight="25dp"
+ 	            android:text="Remove"
+ 	            android:textColor="#305B07"
+ 	            android:textSize="13sp" />
+ 	    </LinearLayout>
+
+ 	    <TableRow
+ 	        android:layout_width="match_parent"
+ 	        android:layout_height="1dp" />
+
+ 	    <LinearLayout
+ 	        android:layout_width="match_parent"
+ 	        android:layout_height="46dp"
+ 	        android:layout_gravity="top"
+ 	        android:orientation="horizontal" >
+
+ 	        <Button
+ 	            android:id="@+id/btnTakePictures"
+ 	            android:layout_width="wrap_content"
+ 	            android:layout_height="wrap_content"
+ 	            android:layout_weight="0.05"
+ 	            android:text="Take Photo"
+ 	            android:textColor="#305B07"
+ 	            android:textSize="13sp" />
+ 	    </LinearLayout>
+ 	</LinearLayout>
+
+</merge>

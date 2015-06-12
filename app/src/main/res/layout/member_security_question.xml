@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MemberSecurityQuestion" >
+  <ScrollView
+        android:id="@+id/Securoty_form"
+        android:background="@drawable/eligibility_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+  <LinearLayout
+         style="@style/SecurityFormContainer"
+         android:orientation="vertical" >
+ 
+    <TextView
+        android:id="@+id/MemberName"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:textAppearance="@style/LabelText"
+        android:textStyle="bold" />
+
+  
+  
+  <TextView
+        android:id="@+id/SecurityQuestionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAppearance="@style/LabelText"
+        android:text="Security Question:"
+        android:singleLine="false"
+        android:textStyle="normal" />
+  	
+  	<TextView
+        android:id="@+id/SecurityQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_weight="1"
+        android:textAppearance="@style/LabelText"
+        android:singleLine="false"
+        android:textStyle="normal" />
+  		
+          <EditText
+                android:id="@+id/txtSecAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="8sp"
+                android:hint="@string/prompt_Answer"
+                android:inputType="text"
+                android:background="@drawable/editbox_border"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+       <Button
+           android:id="@+id/btnGo"
+           android:layout_width="wrap_content"
+           android:layout_height="40dp"
+           android:layout_gravity="right"
+           android:layout_marginTop="16dp"
+           android:background="@drawable/red_button"
+           android:paddingLeft="32dp"
+           android:paddingRight="32dp"
+           android:text="@string/GoButton"
+           android:textColor="#213C78"
+           android:textSize="12sp" />
+
+      </LinearLayout>
+
+  </ScrollView>
+</merge>

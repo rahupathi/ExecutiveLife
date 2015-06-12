@@ -1,0 +1,107 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".PostQueryActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/eligibility_layout"
+        android:orientation="vertical"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip" >
+
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text="Query About"
+            android:textAppearance="@style/LabelText"
+            android:textStyle="normal" />
+         <TableRow
+  			android:layout_width="match_parent"
+      		android:layout_height="2dp"/>
+       	<Spinner
+               android:id="@+id/spnQueryType"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" >
+         </Spinner>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp"
+            android:singleLine="true"
+            android:text="Subject"
+            android:textAppearance="@style/LabelText"
+            android:textStyle="normal" />
+        
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+        <EditText
+             android:id="@+id/txtSubject"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:padding="10dp"
+             android:textSize="8sp"
+             android:inputType="text"
+             android:background="@drawable/editbox_border"
+             android:maxLines="1"
+             android:singleLine="true" />
+		<TableRow
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text="@string/postQuery"
+            android:textAppearance="@style/LabelText"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text="@string/QueryNote"
+            android:textAppearance="@style/LabelText"
+            android:textSize="6dp"
+            android:textStyle="normal" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+
+        <EditText
+            android:id="@+id/txtQuery"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:maxLength="100"
+            android:textStyle="normal"
+            android:typeface="normal" >
+        </EditText>
+
+		<Button
+               android:id="@+id/btnPost"
+               android:layout_width="wrap_content"
+               android:layout_height="37dp"
+               android:background="@drawable/red_button"
+               android:paddingLeft="32dp"
+               android:paddingRight="40dp"
+               android:text="Post Query"
+               android:textColor="#213C78"
+               android:textSize="12sp" />
+		</LinearLayout>
+</merge>
